@@ -1,0 +1,7 @@
+{
+	"ignore": [
+		"test/**/**"
+	],
+
+	"verbose": true
+}

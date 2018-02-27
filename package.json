@@ -1,10 +1,13 @@
 {
 	"name": "@westtrade/bundler",
 	"version": "1.0.0",
-	"description": "",
+	"description": "Bundler without config files. Make bundler great again!",
 	"main": "index.js",
 	"scripts": {
 		"test": "echo \"Error: no test specified\" && exit 1"
+	},
+	"bin": {
+		"starpack": "./bin/cli.js"
 	},
 	"keywords": [
 		"bundler",
@@ -17,7 +20,25 @@
 	},
 	"license": "MIT",
 	"dependencies": {
+		"babel-core": "^6.26.0",
+		"babel-preset-env": "^1.6.1",
+		"babel-preset-react": "^6.24.1",
+		"babelify": "^8.0.0",
+		"bows": "^1.7.0",
 		"browserify": "^16.1.0",
-		"commander": "^2.14.1"
+		"chokidar": "^2.0.2",
+		"commander": "^2.14.1",
+		"commander-completion": "^1.0.1",
+		"commander-plus": "0.0.6",
+		"condenseify": "^1.1.1",
+		"envify": "^4.1.0",
+		"errorify": "^0.3.1",
+		"pino": "^4.11.0",
+		"postcss": "^6.0.19",
+		"scssify": "^3.0.1",
+		"watchify": "^3.10.0"
+	},
+	"devDependencies": {
+		"sass-mediaqueries": "^1.6.1"
 	}
 }
